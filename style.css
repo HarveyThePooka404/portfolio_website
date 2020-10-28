@@ -212,8 +212,9 @@ box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.23);
     width: 100%;
 }
 
-#img_webdesign > img {
-    width: 100%;
+#trouble {
+    grid-column: 1;
+    grid-row: 2;
 }
 
 #text_webdesign {
