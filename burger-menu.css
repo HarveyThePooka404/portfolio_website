@@ -1,0 +1,84 @@
+
+:root {
+    --primary-color: #195D6E;
+    --not-black: #5B5C60;
+    --title-font: Impact;	
+    --title-small: plantin;
+}
+
+/* styling for the burger menu */ 
+.burger_bars {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index:10;
+}
+
+.burger_bars_about {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index:5;
+}
+
+.bar {
+    height: 8px;
+    width: 55px;
+    border-radius: 40px;
+    background-color: var(--primary-color);
+    margin: 0.3em;
+}
+
+.burger_bars_about > div {
+    background-color: white;
+}
+
+.burger_wrapper {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right:0;
+    width: 30vw;
+    height:100vh;
+    background-color: var(--primary-color);
+
+    display: flex;
+    flex-flow: column;
+    padding: 4em;
+}
+
+.burger_wrapper > a {
+    color: white;
+    font-size: 4em;
+    font-family: var(--title-font);
+}
+
+.burger_wrapper > a:hover {
+    text-decoration: underline;
+}
+
+.white_cross {
+    position: fixed;
+    right: 20px;
+    top:40px;
+}
+
+.white_cross > .bar {
+    background-color: white;
+}
+
+#bar_white_1 {
+    transform: rotate(45deg);
+}
+
+#bar_white_2 {
+    transform: rotate(-45deg) translateY(-10px) translateX(9px);
+}
+
+.hidden {
+    visibility: collapse;
+}
+
+.showing {
+    visibility: visible;
+}

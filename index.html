@@ -7,30 +7,61 @@
     <title>Sylvain Buisson - Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/pqp6wtb.css">
+    <link rel="stylesheet" href="burger-menu.css">
 
 </head>
 
 <body>
-    <section class="left_wrapper">
-        <div class="home_empty">HOME</div>
-        <div class="home_empty">HOME</div>
-        <div class="home_empty">HOME</div>
-        <div class="home_filled">HOME</div>
-        <div class="home_empty">HOME</div>
-        <div class="home_empty">HOME</div>
-        <div class="home_empty">HOME</div>
-    </section>
+    <div class="home_wrapper">
+        <section class="left_wrapper">
+            <div class="home_empty">HOME</div>
+            <div class="home_empty">HOME</div>
+            <div class="home_empty">HOME</div>
+            <div class="home_filled">HOME</div>
+            <div class="home_empty">HOME</div>
+            <div class="home_empty">HOME</div>
+            <div class="home_empty">HOME</div>
+        </section>
 
-    <section class="right_wrapper">
-        <div class="hello_wrapper">Hello, I am</div>
-        <div class="sylvain_wrapper">
-            <p>Sylvain</p>
-            <p>a Designer</p>
-            <p>a Developer</p>
-            <p>a Project Manager</p>
+        <section class="right_wrapper">
+            <div class="hello_wrapper filled">Hello, I am</div>
+            <div class="sylvain_wrapper empty">
+                <div class="fake-border">
+                    <a href="about.html">
+                        <p>Sylvain</p>
+                    </a>
+                    <a href="portfolio.html">
+                        <p>a Designer</p>
+                    </a>
+                    <a href="resume.html">
+                        <p>a Developer</p>
+                    </a>
+                    <a href="resume.html">
+                        <p>a Project Manager</p>
+                    </a></div>
+            </div>
+            <img src="me_picture/homepage_me.jpg" alt="home-portrait" class="home_portrait">
+        </section>
+    </div>
+
+    <div class="burger_bars">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <div class="burger_wrapper hidden">
+
+        <div class="white_cross">
+            <div class="bar" id="bar_white_1"></div>
+            <div class="bar" id="bar_white_2"></div>
         </div>
-        <img src="stock photos/stock-photo-computer.jpg" alt="home-portrait" class="home_portrait">
-    </section>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About me</a>
+        <a href="resume.html">Resume</a>
+        <a href="portfolio.html">Portfolio</a>
+    </div>
 </body>
 <script src="script.js"></script>
 
