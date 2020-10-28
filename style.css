@@ -105,7 +105,6 @@ a:hover {
     grid-column: 1;
     height: 100%;
     align-self: end;
-
     -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.23); 
 box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.23);
 }
@@ -130,7 +129,8 @@ box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.23);
 
     background-color: var(--primary-color);
     opacity: 0.9;
-    height: 80%;
+    height: 70%;
+    width: 80%;
 
     -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.23); 
 box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.23);
@@ -182,8 +182,8 @@ box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.23);
 
 .text_portfolio {
     font-family: var(--title-small);
-    font-style: italic;
     font-size: 1.5em;
+    line-height: 1.4;
 }
 
 .horizontal {
@@ -354,7 +354,7 @@ box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.23);
 .wrapper_resume {
 
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 20% 80%;
 
 }
 
@@ -368,14 +368,14 @@ box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.23);
     background-color: var(--primary-color);
     font-family: var(--title-font);
     color: white;
-    font-size: 4vw;
+    font-size: 3vw;
 }
 
 .second_left {
     grid-row: 3;
     display: grid;
     padding-right: 1em;
-    padding-left: 0.5em;
+    padding-left: 0.2em;
     justify-content: end;
     z-index: 1; 
 }
@@ -392,7 +392,7 @@ box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.23);
 
 h2 {
     justify-self: end;
-    font-size: 3.8vw;
+    font-size: 2.8vw;
     padding-top: 0.6em;
 }
 #name_resume {
@@ -432,10 +432,14 @@ h2 {
 
 .profile_resume, .language_p, .contact_p {
     font-family: var(--title-small);
-    font-style: italic;
+    line-height: 1.4;
     font-size: 0.4em;
     padding: 0.5em 0 0.5em 0.8em;
 
+}
+
+.language_p {
+    font-size: 0.8rem;
 }
 
 .language_wrapper {
@@ -529,6 +533,7 @@ h2 {
 
 
 .sub_title {
+    cursor: pointer;
     font-family: var(--title-small);
     color: var(--not-black);
     font-size: 2.5vw;
@@ -536,6 +541,9 @@ h2 {
     padding: 0.2em;
 }
 
+.sub_title:hover {
+    font-weight: bold;
+}
  
 .horizontal_resume_right {
     height: 0.5px;
@@ -555,6 +563,11 @@ h2 {
     grid-template-areas:
     'logo timeline'
     'content content';
+    display:none;
+}
+
+.appear {
+    display:grid;
 }
 
 .company_logo {
@@ -587,9 +600,10 @@ h2 {
 .company_content > p {
     padding-bottom: 0.5em;
     font-family: var(--title-small);
-    font-style: italic;
-    font-size: 1.5vw;
+    font-size: 1.3rem;
+    line-height: 1.4;
 }
+
 
 
 /* ------------------------------------------------------- about me page ------------------*/
@@ -615,22 +629,21 @@ h2 {
 /* ------------------------------------------------------------ left about me ------------------*/
 
 .left_about_me {
-    padding: 2.5em;
+    padding: 3em;
 }
 
 .left_about_me > h2 {
     font-family: var(--title-font);
     color: var(--primary-color);
     grid-column: 1;
-    padding: 0.2em;
     font-size: 6em; 
 }
 
 .left_about_me > p {
     font-family: var(--title-small);
-    font-style: italic;
     color: var(--not-black);
-    font-size:1.4rem;
+    font-size:1.2rem;
+    line-height: 1.4;
     padding-top: 0.2em;
     padding-bottom: 0.2em;
     z-index:3;
@@ -792,7 +805,6 @@ h2 {
 
 .project > p {
     font-family: var(--title-small);
-    font-style: italic;
     font-size: 1.5em;
     text-align: justify;
     padding: 0.8em 0.8em 0.8em 2em;

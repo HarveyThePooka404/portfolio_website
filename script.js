@@ -8,6 +8,7 @@ const sub_title = document.querySelectorAll(".sub_title");
 
 function start() {
     sub_title.forEach(title => {
+        title.addEventListener("click", expandJob);
         let newBar = document.createElement("div");
         newBar.classList.add("horizontal_resume_right"); newBar.style.width = `${title.textContent.length + 4}vw`;
         title.after(newBar);
@@ -33,4 +34,12 @@ function displayBurger() {
     console.log("hello!");
     burger_wrapper.classList.toggle("hidden");
     burger_wrapper.classList.toggle("showing");
+}
+
+
+function expandJob(e) {
+    console.log("hello");
+    console.log(e.currentTarget.nextSibling.nextElementSibling);
+    e.currentTarget.nextSibling.nextElementSibling.classList.toggle("appear");
+
 }
