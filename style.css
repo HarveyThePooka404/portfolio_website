@@ -170,8 +170,14 @@ box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.23);
 .title_portfolio {
     font-family: var(--title-small);
     color: var(--primary-color);
-    font-size: 10vh;
+    font-size: 8vh;
     align-self: end;
+    padding-left: 0.5em;
+
+}
+
+.title_portfolio > a:hover {
+    text-decoration: none;
 }
 
 .text_portfolio {
@@ -203,6 +209,10 @@ box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.23);
 #img_webdesign {
     grid-column: 1;
     grid-row: 2;
+    width: 100%;
+}
+
+#img_webdesign > img {
     width: 100%;
 }
 
