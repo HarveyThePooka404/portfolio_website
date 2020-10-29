@@ -1,0 +1,46 @@
+.breadcrumb {
+    display: flex;
+    flex-flow: row;
+    font-family: var(--title-small);
+    width: 24vw;
+    justify-content: space-between;
+    transform: rotate(-90deg);
+    z-index: 20;
+
+    position: fixed;
+    top: 13vw;
+    right: -11vw;
+    align-items: center;
+}
+
+.current {
+    color: var(--primary-color);
+    font-size: 1.2em;
+}
+
+.current_about {
+    color: #0D323B;
+    font-size: 1.2em;
+}
+
+#about_bc {
+    color: white;
+}
+
+#about_bc > p > a:hover {
+    color: #0D323B;
+}
+
+.dot {
+    width: 3px;
+    height: 3px;
+    background-color: black;
+    border-radius: 100%;
+}
+
+.dot_about {
+    width: 3px;
+    height: 3px;
+    background-color: white;
+    border-radius: 100%; 
+}
