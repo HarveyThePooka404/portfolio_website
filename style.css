@@ -153,6 +153,7 @@ box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.23);
 /* ----------------------- portfolio page ------------------*/
 
 .title_general_portfolio {
+    overflow: hidden;
     display: grid;
     grid-template-columns: 50% 50%;
     font-size: 18vh;
@@ -162,6 +163,7 @@ box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.23);
 }
 
 .category {
+    overflow: hidden;
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: 30% 70%;
@@ -196,7 +198,7 @@ box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.23);
     background-color: var(--primary-color);
     height: 1.5px;
     width: 150px;
-    transform: rotate(-90deg);
+    transform   : rotate(-90deg);
 }
 
 /* specifics for first category */ 
@@ -631,12 +633,16 @@ h2 {
 .left_about_me {
     padding: 3em;
 }
-
-.left_about_me > h2 {
+.fake-wrapper {
+    overflow: hidden;
+}
+.fake-wrapper> h2 {
     font-family: var(--title-font);
     color: var(--primary-color);
     grid-column: 1;
     font-size: 6em; 
+    padding-top: 0;
+    overflow: hidden;
 }
 
 .left_about_me > p {

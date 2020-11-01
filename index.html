@@ -7,21 +7,21 @@
     <title>Sylvain Buisson - Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/pqp6wtb.css">
-    <link rel="stylesheet" href="burger-menu.css">
     <link rel="stylesheet" href="breadcrumb.css">
+    <link rel="stylesheet" href="animation.css">
 
 </head>
 
 <body>
     <div class="home_wrapper">
         <section class="left_wrapper">
-            <div class="home_empty">HOME</div>
-            <div class="home_empty">HOME</div>
-            <div class="home_empty">HOME</div>
-            <div class="home_filled">HOME</div>
-            <div class="home_empty">HOME</div>
-            <div class="home_empty">HOME</div>
-            <div class="home_empty">HOME</div>
+            <div class="home_empty" id="home_empty_1" style="--position: 3">HOME</div>
+            <div class="home_empty" id="home_empty_2" style="--position: 2">HOME</div>
+            <div class="home_empty" id="home_empty_3" style="--position: 1">HOME</div>
+            <div class="home_filled" id="home_filled_1" style="--position: 4">HOME</div>
+            <div class="home_empty" id="home_empty_4" style="--position: 1">HOME</div>
+            <div class="home_empty" id="home_empty_5" style="--position: 2">HOME</div>
+            <div class="home_empty" id="home_empty_6" style="--position:3">HOME</div>
         </section>
 
         <section class="right_wrapper">
@@ -30,26 +30,28 @@
             <div class="sylvain_wrapper empty">
                 <div class="fake-border">
                     <a href="about.html" target="_blank">
-                        <p>Sylvain</p>
+                        <p id="sylvain" style="--delay: 1s">Sylvain</p>
                     </a>
                     <a href="portfolio.html" target="_blank">
-                        <p>a Designer</p>
+                        <p id="designer" style="--delay: 1.5s">a Designer</p>
                     </a>
                     <a href="resume.html" target="_blank">
-                        <p>a Developer</p>
+                        <p id="developer" style="--delay: 2s">a Developer</p>
                     </a>
                 </div>
         </section>
     </div>
 
     <div class="breadcrumb" id="home_bc">
-        <p id="link_home_bc" class="current"><a href="index.html" class="intext-a">Home</a></p>
-        <span class="dot"></span>
-        <p><a href="about.html" class="intext-a">About me</a></p>
-        <span class="dot"></span>
-        <p><a href="portfolio.html" class="intext-a">Portfolio</a></p>
-        <span class="dot"></span>
-        <p><a href="resume.html" class="intext-a">Resume</a></p>
+        <p id="link_home_bc" class="current sliding" style="--delay: 0.1s"><a href="index.html"
+                class="intext-a">Home</a>
+        </p>
+        <span class="dot sliding" style="--delay: 0.11s"></span>
+        <p class="sliding" style="--delay: 0.12s"><a href="about.html" class="intext-a">About me</a></p>
+        <span class="dot sliding" style="--delay: 0.14s"></span>
+        <p class="sliding" style="--delay: 0.2s"><a href="portfolio.html" class="intext-a">Portfolio</a></p>
+        <span class="dot sliding" style="--delay: 0.25s"></span>
+        <p class="sliding" style="--delay: 0.3s"><a href="resume.html" class="intext-a">Resume</a></p>
     </div>
 
     <!-- 

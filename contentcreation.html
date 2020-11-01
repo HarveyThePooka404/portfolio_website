@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Content Creation - portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="burger-menu.css">
+    <link rel="stylesheet" href="breadcrumb.css">
+    <link rel="stylesheet" href="animation.css">
     <link rel="stylesheet" href="https://use.typekit.net/pqp6wtb.css">
 
 </head>
@@ -92,8 +93,22 @@
         </section>
 
     </section>
+
+
     <!-- Here starts the burger menu stuff -->
-    <div class="burger_bars">
+
+    <div class="breadcrumb" id="home_bc">
+        <p id="link_home_bc" class="sliding" style="--delay: 0.1s"><a href="index.html" class="intext-a">Home</a>
+        </p>
+        <span class="dot sliding" style="--delay: 0.11s"></span>
+        <p class="sliding" style="--delay: 0.12s"><a href="about.html" class="intext-a">About me</a></p>
+        <span class="dot sliding" style="--delay: 0.14s"></span>
+        <p class=" current sliding" style="--delay: 0.2s"><a href="portfolio.html" class="intext-a">Portfolio</a></p>
+        <span class="dot sliding" style="--delay: 0.25s"></span>
+        <p class="sliding" style="--delay: 0.3s"><a href="resume.html" class="intext-a">Resume</a></p>
+    </div>
+
+    <!--     <div class="burger_bars">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
@@ -110,7 +125,7 @@
         <a href="about.html">About me</a>
         <a href="resume.html">Resume</a>
         <a href="portfolio.html">Portfolio</a>
-    </div>
+    </div> -->
 
 </body>
 

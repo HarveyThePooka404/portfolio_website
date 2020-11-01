@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="burger-menu.css">
+    <link rel="stylesheet" href="animation.css">
     <link rel="stylesheet" href="breadcrumb.css">
     <link rel="stylesheet" href="https://use.typekit.net/pqp6wtb.css">
 
@@ -20,7 +20,9 @@
 
     <section class="about_me_section">
         <section class="left_about_me">
-            <h2>Oh hi there !</h2>
+            <div class="fake-wrapper">
+                <h2 id="mark"> Oh hi there !</h2>
+            </div>
             <p>Here is some more about me as a person, rather than a coworker. If you want to learn more
                 about my career, you should check-out my <a href="resume.html" class="intext-a">resume</a> or maybe my
                 <a href="portfolio.html" class="intext-a">portfolio</a>.
@@ -65,13 +67,13 @@
 
     <!-- new breadcrumbs-->
     <div class="breadcrumb" id="about_bc">
-        <p id="link_home_bc"><a href="index.html" class="intext-a">Home</a></p>
-        <div class="dot_about"></div>
-        <p class="current_about"><a href="about.html" class="intext-a">About me</a></p>
-        <span class="dot_about"></span>
-        <p><a href="portfolio.html" class="intext-a">Portfolio</a></p>
-        <span class="dot_about"></span>
-        <p><a href="resume.html" class="intext-a">Resume</a></p>
+        <p id="link_home_bc" class="sliding" style="--delay: 0.1s"><a href="index.html" class="intext-a">Home</a></p>
+        <div class="dot_about sliding" style="--delay: 0.1s"></div>
+        <p class="current_about sliding" style="--delay: 0.1s"><a href="about.html" class="intext-a">About me</a></p>
+        <span class="dot_about sliding" style="--delay: 0.12s"></span>
+        <p class="sliding" style="--delay: 0.2s"><a href="portfolio.html" class="intext-a">Portfolio</a></p>
+        <span class="dot_about sliding" style="--delay: 0.25s"></span>
+        <p class="sliding" style="--delay: 0.3s"><a href="resume.html" class="intext-a">Resume</a></p>
     </div>
 
     <!--     <div class="burger_wrapper hidden">
