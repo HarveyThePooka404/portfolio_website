@@ -1,0 +1,107 @@
+/* animation for the home page */
+
+
+/* animation for the home text */
+#home_empty_1, #home_empty_2, #home_empty_3 {
+    animation: 0.6s moving ease-out forwards;
+}
+
+@keyframes moving {
+    from {transform: translateY(calc(var(--position) * 14.28vh))};
+    to {transform: translateY(0%)};
+}
+
+#home_empty_4, #home_empty_5, #home_empty_6 {
+    animation: 0.6s moving_2 ease-out forwards;
+}
+
+@keyframes moving_2 {
+    from {transform: translateY(calc(var(--position) * -14.28vh))};
+    to {transform: translateY(0%)};
+}
+
+
+/* animation for the left navigation menu */ 
+
+.sliding {
+    animation: calc(var(--delay)*2) slide ease-out;
+}
+
+@keyframes slide {
+    from {transform: translateY(10vh)}
+    to {transform: translateY(0%)};}
+
+/* animation for the left navigation menu */ 
+
+#mark {
+    animation: 0.6s marking ease-out forwards;
+}
+
+@keyframes marking {
+    from {transform: translateY(20vh)};
+    to {transform: translateY(0%)};
+}
+
+/* bubbles? */
+
+.bubbles {
+    animation: 0.8s expanding ease-out;
+}
+
+@keyframes expanding {
+    from {
+        height: 0%;
+        width: 0%;
+    }
+
+    to {}
+}
+
+/* portfolio animation */
+
+.line_coming_top {
+    animation: 0.8s lineComingTop linear forwards;
+}
+
+@keyframes lineComingTop {
+    from {transform: rotate(-90deg) translateX(-50vh)};
+    to {transform: translateX(0%)};
+}
+
+.line_coming_side {
+    animation: 0.8s lineComingSide linear forwards;
+}
+
+@keyframes lineComingSide {
+    from {transform: translateX(-50vw)};
+    to {transform: translateX(0%)};
+}
+
+/* do scroll trigger on other lines => javascript*/
+
+.title_portfolio {
+    animation: 0.7s titlePortfolioRight ease-out forwards;
+}
+
+@keyframes titlePortfolioRight {
+    from {transform: translateX(-20vw)};
+    to {transform: translateX(0%)};
+}
+
+#left_portfolio {
+    animation: 0.5s leftPortfolioAnimation forwards;
+}
+
+@keyframes leftPortfolioAnimation {
+    from {transform: translateY(20vh)};
+    to {transform: translateY(0%)};
+}
+
+#right_portfolio {
+    animation: 0.5s rightPortfolioAnimation forwards;
+}
+
+@keyframes rightPortfolioAnimation {
+    from {transform: translateY(-20vh)};
+    to {transform: translateY(0%)};
+}
