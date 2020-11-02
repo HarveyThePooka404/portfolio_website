@@ -775,6 +775,7 @@ h2 {
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 5%;
+
 }
 
 .project {
@@ -795,7 +796,8 @@ h2 {
 .project > .image_project > img {
     width: 100%;
     align-self: center;
-
+    -webkit-box-shadow: 14px 15px 15px -12px rgba(0,0,0,0.36); 
+box-shadow: 14px 15px 15px -12px rgba(0,0,0,0.36);
 }
 
 .project > .title_project {

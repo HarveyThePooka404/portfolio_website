@@ -116,3 +116,37 @@
     from {transform: translateY(-20vh)};
     to {transform: translateY(0%)};
 }
+
+/* adding animation to sub pages for portfolio*/
+
+body > section > section.top_picture_sub > h2 {
+    animation: 0.4s marking ease-out forwards;
+}
+
+/* adding animation to resume*/
+
+.horizontal_resume {
+    animation: 0.3s titlePortfolioRight ease-out forwards;
+}
+
+.horizontal_resume_right {
+animation: 0.8s titlePortfolioLeft ease-in-out forwards;
+}
+
+#left_vertical {
+    animation: 0.8s leftResumeVer 0.1s forwards;   
+}
+
+@keyframes leftResumeVer {
+    from {transform: translateY(40vh);}
+    to {transform: translateY(0%);}
+}
+
+#right_vertical {
+    animation: 2s RightResumeVer 0.1s forwards;   
+}
+
+@keyframes RightResumeVer {
+    from {transform: translateY(-300vh);}
+    to {transform: translateY(0%);}
+}
