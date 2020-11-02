@@ -23,7 +23,7 @@
     <section class="category">
         <div clasS="horizontal line_coming_side" id="horizontal_webdev"></div>
         <div clasS="vertical line_coming_top" id="vertical_webdev"></div>
-        <p class="title_portfolio" id="title_webdesign"><a href="webdesign.html" class="intext-a">Web
+        <p class="title_portfolio sliding_title" id="title_webdesign"><a href="webdesign.html" class="intext-a">Web
                 Design</a></p>
         <a href="webdesign.html" id="trouble"><img src="screenshots/serie-screenshot.png" alt="webdesign"
                 id="img_webdesign"></a>
@@ -42,9 +42,10 @@
 
     <!-- second category -->
     <section class="category" id="second_category">
-        <div clasS="horizontal" id="horizontal_animation"></div>
-        <div clasS="vertical" id="vertical_animation"></div>
-        <p class="title_portfolio" id="title_animation"><a href="animation.html" class="intext-a">Animation</a></p>
+        <div class="horizontal hidden" id="horizontal_animation"></div>
+        <div class="vertical hidden" id="vertical_animation"></div>
+        <p class="title_portfolio hidden" id="title_animation"><a href="animation.html" class="intext-a">Animation</a>
+        </p>
         <a href="animation.html"><img src="screenshots/Educ-game-screenshot.png" alt="animation" class="img_portfolio"
                 id="img_animation"></a>
         <div class="text_portfolio" id="text_animation">
@@ -58,11 +59,13 @@
 
     <!-- third category -->
     <section class="category" id="third_category">
-        <div clasS="horizontal" id="horizontal_content"></div>
-        <div clasS="vertical" id="vertical_content"></div>
-        <p class="title_portfolio" id="title_content_left"><a href="contentcreation.html" class="intext-a">Content</a>
+        <div clasS="horizontal hidden" id="horizontal_content"></div>
+        <div clasS="vertical hidden" id="vertical_content"></div>
+        <p class="title_portfolio hidden" id="title_content_left"><a href="contentcreation.html"
+                class="intext-a">Content</a>
         </p>
-        <p class="title_portfolio" id="title_content_right"><a href="contentcreation.html" class="intext-a">Creation</a>
+        <p class="title_portfolio hidden" id="title_content_right"><a href="contentcreation.html"
+                class="intext-a">Creation</a>
         </p>
         <a href="contentcreation.html"><img src="screenshots/content-creation-screenshot.png" alt="content"
                 class="img_portfolio" id="img_content"></a>
@@ -82,8 +85,7 @@
 
     <!-- new breadcrumbs-->
     <div class="breadcrumb" id="home_bc">
-        <p id="link_home_bc" class="sliding" style="--delay: 0.1s"><a href="index.html"
-                class="intext-a">Home</a>
+        <p id="link_home_bc" class="sliding" style="--delay: 0.1s"><a href="index.html" class="intext-a">Home</a>
         </p>
         <span class="dot sliding" style="--delay: 0.11s"></span>
         <p class="current sliding" style="--delay: 0.12s"><a href="portfolio.html" class="intext-a">Portfolio</a></p>

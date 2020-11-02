@@ -79,7 +79,18 @@
 
 /* do scroll trigger on other lines => javascript*/
 
-.title_portfolio {
+.sliding_title_right {
+    animation: 0.7s titlePortfolioLeft ease-out forwards;
+}
+
+
+@keyframes titlePortfolioLeft {
+    from {transform: translateX(20vw)};
+    to {transform: translateX(0%)};
+}
+
+
+.sliding_title {
     animation: 0.7s titlePortfolioRight ease-out forwards;
 }
 

@@ -37,6 +37,9 @@ a:hover {
     color: var(--primary-color);
 }
 
+.hidden {
+    visibility: hidden;
+}
 
 .empty {
     font-family: var(--title-font);
@@ -130,7 +133,7 @@ box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.23);
     background-color: var(--primary-color);
     opacity: 0.9;
     height: 70%;
-    width: 80%;
+    width: 90%;
 
     -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.23); 
 box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.23);
