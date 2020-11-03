@@ -563,16 +563,15 @@ h2 {
 .work_experience_expanded {
     padding: 2em;
     padding-right:4.5em;
-    display: grid;
+    display: none;
     grid-template-columns: 20% 80%;
     grid-template-areas:
     'logo timeline'
     'content content';
-    display:none;
 }
 
 .appear {
-    display:grid;
+    display: grid;
 }
 
 .company_logo {

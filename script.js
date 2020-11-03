@@ -38,7 +38,6 @@ function displayBurger() {
 
 
 function expandJob(e) {
-    console.log("hello");
     console.log(e.currentTarget.nextSibling.nextElementSibling);
     e.currentTarget.nextSibling.nextElementSibling.classList.toggle("appear");
 
