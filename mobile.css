@@ -90,6 +90,7 @@
 }
 
 #about_bc {
+    left: 93%;
     color: var(--not-black);
     mix-blend-mode: difference;
 }
