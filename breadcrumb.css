@@ -2,14 +2,16 @@
     display: flex;
     flex-flow: row;
     font-family: var(--title-small);
-    width: 24vw;
+    width: 50vh;
     justify-content: space-between;
+
+    transform-origin: top left;
     transform: rotate(-90deg);
     z-index: 20;
 
     position: fixed;
-    top: 13vw;
-    right: -11vw;
+    bottom: 38%;
+    left: 98%;
     align-items: center;
 }
 

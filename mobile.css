@@ -9,7 +9,6 @@
     --title-small: plantin;
 }
     .home_wrapper {
-        width: 100vw;
         display: flex;
         flex-flow: column;
         height: auto;
@@ -19,23 +18,23 @@
         grid-row: 1;
         display: flex;
         flex-flow: row;
-        width: 100vw;
 
     }
 
     .right_wrapper {
         display: flex;
         flex-flow: column;
-        grid-template-rows: repeat(3, auto);
-        grid-template-columns: 1fr;
     }
 
     .hello_wrapper {
+        padding-left: 0.2em;
         grid-row: 1;
         grid-column: 1;
+        font-size: 8vh;
     }
 
     .sylvain_wrapper {
+        font-size: 8vw;
         position: relative;
         top: auto;
         grid-row: 2;
@@ -53,9 +52,13 @@
 /* styling for the home page */ 
 
 #home_bc {
-    top: 30vh;
-    right: -40vw;
-    width: 48vh;
+    position: relative;
+    transform-origin: bottom right;
+    transform: rotate(-90deg);
+    left: 0;
+    bottom: 0;
+    align-self: flex-end;
+    
 }
 
   }
