@@ -254,9 +254,12 @@ body > div > section.left_resume > section > h2 {
 }
 
 .sub_title {
-    font-size: 1em;
+    font-size: 2em;
 }
 
+.company_name, .company_time {
+    font-size: 2.5em;
+}
 .work_experience_wrapper {
     padding: 0;
 }
