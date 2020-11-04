@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="animation.css">
     <link rel="stylesheet" href="breadcrumb.css">
     <link rel="stylesheet" href="https://use.typekit.net/pqp6wtb.css">
+    <link rel="stylesheet" href="mobile.css">
+
 
     <title>About me</title>
 
@@ -17,6 +19,18 @@
 </head>
 
 <body>
+
+    <!-- new breadcrumbs-->
+    <div class="breadcrumb" id="about_bc">
+        <p id="link_home_bc" class="sliding" style="--delay: 0.1s"><a href="index.html" class="intext-a">Home</a></p>
+        <div class="dot_about sliding" style="--delay: 0.1s"></div>
+        <p class="sliding" style="--delay: 0.1s"><a href="portfolio.html" class="intext-a">Portfolio</a>
+        </p>
+        <span class="dot_about sliding" style="--delay: 0.12s"></span>
+        <p class="sliding" style="--delay: 0.2s"><a href="resume.html" class="intext-a">Resume</a></p>
+        <span class="dot_about sliding" style="--delay: 0.25s"></span>
+        <p class="sliding current_about" style="--delay: 0.3s"><a href="about.html" class="intext-a">About me</a></p>
+    </div>
 
     <section class="about_me_section">
         <section class="left_about_me">
@@ -50,8 +64,11 @@
             <p>So next time you are stuck on a problem, think about it: what is it an extension from?</p>
         </section>
         <section class="right_about_me">
-            <img src="me_picture/about_me_me_possible_touched.jpg" alt="why would  you not load?"
-                class="about_me_picture">
+            <picture>
+                <source srcset="me_picture/me_looking_up.jpg" media="(max-width: 1200px)" />
+                <img class="about_me_picture" src="me_picture/about_me_me_possible_touched.jpg"
+                    alt="me looking honestly really cute" />
+            </picture>
         </section>
 
         <div class="bubbles_wrapper">
@@ -64,38 +81,6 @@
         </div>
 
     </section>
-
-
-    <!-- new breadcrumbs-->
-    <div class="breadcrumb" id="about_bc">
-        <p id="link_home_bc" class="sliding" style="--delay: 0.1s"><a href="index.html" class="intext-a">Home</a></p>
-        <div class="dot_about sliding" style="--delay: 0.1s"></div>
-        <p class="sliding" style="--delay: 0.1s"><a href="portfolio.html" class="intext-a">Portfolio</a>
-        </p>
-        <span class="dot_about sliding" style="--delay: 0.12s"></span>
-        <p class="sliding" style="--delay: 0.2s"><a href="resume.html" class="intext-a">Resume</a></p>
-        <span class="dot_about sliding" style="--delay: 0.25s"></span>
-        <p class="sliding current_about" style="--delay: 0.3s"><a href="about.html" class="intext-a">About me</a></p>
-    </div>
-
-    <!--     <div class="burger_wrapper hidden">
-
-                <div class="burger_bars_about">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-
-        <div class="white_cross">
-            <div class="bar" id="bar_white_1"></div>
-            <div class="bar" id="bar_white_2"></div>
-        </div>
-
-        <a href="index.html">Home</a>
-        <a href="about.html">About me</a>
-        <a href="resume.html">Resume</a>
-        <a href="portfolio.html">Portfolio</a>
-    </div> -->
 
 </body>
 <script src="script.js"></script>

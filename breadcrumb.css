@@ -20,6 +20,13 @@
     font-size: 1.2em;
 }
 
+.dot {
+    width: 3px;
+    height: 3px;
+    background-color: black;
+    border-radius: 100%;
+}
+
 .current_about {
     color: #0D323B;
     font-size: 1.2em;
@@ -31,13 +38,6 @@
 
 #about_bc > p > a:hover {
     color: #0D323B;
-}
-
-.dot {
-    width: 3px;
-    height: 3px;
-    background-color: black;
-    border-radius: 100%;
 }
 
 .dot_about {

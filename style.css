@@ -666,6 +666,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
     background-color: var(--primary-color);
     width: 45vw;
     height: 100vh;
@@ -673,8 +674,9 @@ h2 {
 }
 
 .about_me_picture {
-    height: 60%;
-    image-rendering: smooth;
+    width: 65%; 
+    margin-top: 10%;
+    margin-left: 20%;
 }
 /* bubbles */ 
 
