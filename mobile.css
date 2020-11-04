@@ -1,5 +1,7 @@
 @media only screen and (max-width: 1200px) {
 
+@import url('https://fonts.googleapis.com/css?family=Impact');
+
 /* styling for the home page */ 
 
     .home_wrapper {
